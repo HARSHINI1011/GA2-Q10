@@ -22,7 +22,7 @@ app = FastAPI()
 # ============================================================
 # 1. CONFIG — fill in your own values here
 # ============================================================
-YOUR_EMAIL = "you@example.com"  # <-- put YOUR logged-in email here
+YOUR_EMAIL = "24f2006358@ds.study.iitm.ac.in"  # <-- put YOUR logged-in email here
 
 ALLOWED_ORIGINS = [
     "https://app-yt9och.example.com",  # your assigned CORS origin
@@ -30,7 +30,7 @@ ALLOWED_ORIGINS = [
     # so the browser-based grader can call /ping. Replace the line below
     # with the ACTUAL origin the grader page runs on (open the grader
     # page, check its URL bar -> that scheme+host+port is the "origin").
-    "https://REPLACE-WITH-EXAM-PAGE-ORIGIN",
+    "https://exam.sanand.workers.dev/tds-2026-05-ga2",
 ]
 
 RATE_LIMIT_MAX = 13          # your assigned bucket size (B)
