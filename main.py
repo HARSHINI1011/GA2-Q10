@@ -30,7 +30,7 @@ ALLOWED_ORIGINS = [
     # so the browser-based grader can call /ping. Replace the line below
     # with the ACTUAL origin the grader page runs on (open the grader
     # page, check its URL bar -> that scheme+host+port is the "origin").
-    "https://exam.sanand.workers.dev/tds-2026-05-ga2",
+    "https://exam.sanand.workers.dev",
 ]
 
 RATE_LIMIT_MAX = 13          # your assigned bucket size (B)
