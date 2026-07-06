@@ -22,7 +22,7 @@ app = FastAPI()
 # ============================================================
 # 1. CONFIG — fill in your own values here
 # ============================================================
-YOUR_EMAIL = "24f2006358@ds.study.iitm.ac.in"  # <-- put YOUR logged-in email here
+YOUR_EMAIL = "24f200638@ds.study.iitm.ac.in"  # <-- put YOUR logged-in email here
 
 ALLOWED_ORIGINS = [
     "https://app-yt9och.example.com",  # your assigned CORS origin
@@ -107,6 +107,12 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["GET", "OPTIONS"],
     allow_headers=["*"],
+    # Without this, the header IS sent on the wire, but browser JS
+    # (fetch/XHR) cannot read custom response headers cross-origin
+    # unless the server explicitly whitelists them here. This is why
+    # X-Request-ID can look "missing" to a browser-based grader even
+    # though curl/Postman show it just fine.
+    expose_headers=["X-Request-ID"],
 )
 
 
