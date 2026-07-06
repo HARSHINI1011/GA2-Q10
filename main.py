@@ -22,7 +22,7 @@ app = FastAPI()
 # ============================================================
 # 1. CONFIG — fill in your own values here
 # ============================================================
-YOUR_EMAIL = "24f200638@ds.study.iitm.ac.in"  # <-- put YOUR logged-in email here
+YOUR_EMAIL = "24f2006358@ds.study.iitm.ac.in"  # <-- put YOUR logged-in email here
 
 ALLOWED_ORIGINS = [
     "https://app-yt9och.example.com",  # your assigned CORS origin
